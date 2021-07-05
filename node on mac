@@ -1,0 +1,37 @@
+- brew 설치
+
+    [Homebrew](https://brew.sh/index_ko)
+
+    Mac용 패키지 관리자
+
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
+- Node.js 설치
+    - nvm 설치
+
+        [nvm-sh/nvm](https://github.com/nvm-sh/nvm)
+
+        ```bash
+        brew install nvm
+        mkdir ~/.nvm
+        nano ~/.zshrc
+        ```
+
+        - .zshrc의 파일에 아래 내용 추가
+
+            ```
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+            [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+            ```
+
+    - node.js 설치
+        - 설치 : nvm install 14.17.2
+        - 삭제 : nvm uninstall 14.17.2
+        - 버전 목록 : nvm ls
+        - 사용 버전 지정 : nvm use 12.13.1
+- 개발툴 설치
+    - VS Code
+    - IntelliJ
